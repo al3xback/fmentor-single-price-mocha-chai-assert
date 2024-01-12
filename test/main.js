@@ -36,26 +36,27 @@ describe('DOM', () => {
 	});
 
 	it("should have a title element that contains 'Join our community' word in first section element", () => {
-		const sectionElements = document.querySelectorAll('section');
-		const firstSectionElement = sectionElements[0];
-		const cardTitleEl = firstSectionElement.querySelector('.card__title');
+		const sectionEls = document.querySelectorAll('section');
+		const firstSectionEl = sectionEls[0];
+		const cardTitleEl = firstSectionEl.querySelector('.card__title');
 		const cardTitle = cardTitleEl.textContent.trim();
 
 		assert.equal(cardTitle, 'Join our community');
 	});
 
 	it('should have three section elements', () => {
-		const sectionElements = document.querySelectorAll('section');
+		const sectionEls = document.querySelectorAll('section');
 
-		assert.lengthOf(sectionElements, 3);
+		assert.lengthOf(sectionEls, 3);
 	});
 
 	it("should have a word 'Coding exercises' as one of why us points", () => {
-		const whyUsPointElements = document.querySelectorAll('.card__list li');
+		const whyUsPointEls = document.querySelectorAll('.card__list li');
+
 		const whyUsPoints = [];
 
-		for (let i = 0; i < whyUsPointElements.length; i++) {
-			const whyUsPoint = whyUsPointElements[i].textContent;
+		for (let i = 0; i < whyUsPointEls.length; i++) {
+			const whyUsPoint = whyUsPointEls[i].textContent;
 			whyUsPoints.push(whyUsPoint);
 		}
 
