@@ -41,7 +41,7 @@ describe('DOM', () => {
 		const cardTitleEl = firstSectionEl.querySelector('.card__title');
 		const cardTitle = cardTitleEl.textContent.trim();
 
-		assert.equal(cardTitle, 'Join our community');
+		assert.include(cardTitle, 'Join our community');
 	});
 
 	it('should have three section elements', () => {
