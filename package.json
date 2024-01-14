@@ -1,7 +1,7 @@
 {
 	"name": "fmentor-single-price-mocha-chai-assert",
 	"version": "1.0.0",
-	"description": "single price grid component using mocha and chai testing with assert style",
+	"description": "single price grid component using mocha and chai with assert style",
 	"main": "index.js",
 	"type": "module",
 	"scripts": {

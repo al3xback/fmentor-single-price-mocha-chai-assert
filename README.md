@@ -20,7 +20,7 @@ Users should be able to:
 ### Built with
 
 - Semantic HTML5 markup
-- Mocha - Chai Testing (TDD Assert style)
+- Mocha - Chai (TDD Assert style)
 - Mobile-first workflow
 
 ## Author
